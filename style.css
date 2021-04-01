@@ -1,0 +1,647 @@
+/* ------------------------------------------------------------------------------ENTIRE BODY RESETS----------------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  scroll-behavior: smooth;
+  background-color: #f1f1f1;
+}
+a {
+  color: white;
+}
+/* -----------------------------------------------------START OF NAVIGATION PART STYLES--------------------------------------------------------------------------- */
+.landing-page-nav-bar {
+  width: 100%;
+  background-color: rgba(0, 0, 255, 0.466);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.landing-page-nav-bar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5%;
+  background-color: rgba(200, 10, 231, 0.932);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.landing-page-nav-bar.sticky ul li a {
+  color: white;
+}
+.landing-page-h-container {
+  color: white;
+  cursor: pointer;
+}
+.landing-page-nav-lists ul {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-page-nav-lists > ul > li {
+  padding: 1rem;
+}
+.drop-down {
+  position: relative;
+}
+.hidden ul {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+  color: red;
+  background-color: blue;
+  z-index: 2;
+}
+.hidden ul {
+  display: none;
+}
+.hidden ul li {
+  padding: 0.5rem;
+}
+.landing-navigation-but {
+  color: blue;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  outline: none;
+  cursor: pointer;
+  transition: all 1s linear;
+}
+.drop-down:hover .hidden ul {
+  display: block;
+}
+.landing-navigation-but:hover {
+  background-color: blue;
+  color: white;
+  border-radius: 30%;
+}
+.togglebutton {
+  display: none;
+}
+.navigation-in-landing-page .actives {
+  border-bottom: 1px solid red;
+}
+.navigation-in-landing-page ul li a:hover {
+  border-bottom: 1px solid red;
+}
+@media (max-width: 800px) {
+  .landing-page-nav-lists {
+    display: none;
+  }
+  .togglebutton {
+    display: block;
+  }
+  .active {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2rem;
+  }
+  .landing-page-nav-lists ul {
+    flex-direction: column;
+  }
+  .landing-page-nav-lists ul li a {
+    background: transparent;
+    color: red;
+  }
+}
+
+/* -----------------------------------------------------END OF NAVIGATION PART STYLES------------------------------------------------------------------------------ */
+/* -----------------------------------------------------START OF LANDING PAGE STYLES------------------------------------------------------------------------------- */
+.landing-page-container {
+  width: 90%;
+  border-top: none;
+  margin: 3rem auto;
+}
+.landing-page-main {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+}
+.logo {
+  width: 4rem;
+}
+#course-logo {
+  width: 21rem;
+}
+.landing-page-logo-part {
+  display: flex;
+  align-items: center;
+}
+.dummy-div {
+  margin-left: 1rem;
+}
+#pg {
+  background-color: rgba(0, 128, 0, 0.541);
+  display: inline-block;
+  color: white;
+}
+#course-para {
+  margin-top: 2rem;
+}
+.landing-page-left-side {
+  padding: 1.5rem;
+}
+.landing-page-details-blocks {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.landing-page-details-block {
+  flex-basis: 33.33%;
+  padding: 1rem;
+}
+.navigation-in-landing-page {
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  border-top: none;
+  width: 100%;
+  margin: 5rem auto;
+}
+.navigation-in-landing-page ul li {
+  display: inline-block;
+  padding: 0.8rem;
+}
+.navigation-in-landing-page ul li a {
+  color: black;
+}
+@media (max-width: 800px) {
+  .landing-page-main {
+    flex-direction: column;
+  }
+}
+@media (max-width: 450px) {
+  #course-logo {
+    width: 15rem;
+  }
+}
+/* -----------------------------------------------------END OF LANDING PAGE STYLES--------------------------------------------------------------------------------- */
+/* -----------------------------------------------------START OF COURSE HIGHLIGHTS PAGE STYLES---------------------------------------------------------------------- */
+.highlights-page-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.highlights-content {
+  display: flex;
+}
+.highlights-top-part {
+  width: 80vw;
+  height: 10vh;
+}
+.highlights-left-part {
+  width: 50vw;
+  height: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.329);
+  border-top: none;
+  line-height: 1.8rem;
+}
+.highlights-right-part {
+  width: 50vw;
+  height: 80vh;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.377);
+  border-top: none;
+  margin-bottom: 2rem;
+}
+#form-but,
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 20rem;
+  height: 2rem;
+  padding: 0.2rem;
+}
+input[type="number"] {
+  width: 15.5rem;
+  height: 2rem;
+  padding: 0.2rem;
+}
+.highlights-lists ul li::before {
+  content: url("./Images/list\ before\ image.png");
+  padding: 1rem;
+}
+.cricket {
+  border-bottom: 3px solid red;
+}
+#select-dropdowns {
+  height: 2rem;
+}
+#form-but {
+  margin-top: 1rem;
+  background-color: crimson;
+  color: white;
+  border-radius: 0.5rem;
+  outline: none;
+}
+.form-hs {
+  margin-top: 1rem;
+}
+@media (max-width: 750px) {
+  .highlights-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .highlights-right-part {
+    width: 100%;
+  }
+  .highlights-left-part {
+    width: 100%;
+  }
+  #form-but,
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"] {
+    width: 100%;
+  }
+}
+/* ------------------------------------------------------END OF COURSE HIGHLIGHTS PAGE STYLES------------------------------------------------------------------------- */
+/* --------------------------------------------------------START OF COURSE SYLLABUS PAGE STYLES---------------------------------------------------------------------- */
+.course-syllabus-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.top-side {
+  display: flex;
+  align-items: center;
+}
+.top-left-side {
+  flex-basis: 70%;
+}
+.top-right-side {
+  margin: 0 auto;
+}
+#download-btn {
+  padding: 0.6rem;
+  background-color: orange;
+  color: white;
+}
+.syllabus-middle-container {
+  width: 90%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  border-top: none;
+}
+.syllabus-middle-container a {
+  padding: 0.3rem;
+  color: black;
+}
+.syllabus-final-container {
+  width: 85%;
+  height: 70%;
+  margin-top: 2rem;
+}
+.dura {
+  margin-left: 8rem !important;
+}
+.fields {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+  justify-content: space-between;
+  position: relative;
+  padding: 0.2rem;
+  margin-bottom: 0;
+}
+.legpos {
+  position: absolute;
+  top: 0.5rem;
+  left: -7px;
+  font-size: 1.5rem;
+  background-color: red;
+  cursor: pointer;
+}
+.hidden-container {
+  border: 1px solid black;
+  border-top: none;
+  margin: 2rem;
+  margin-top: 0;
+  padding: 0 1rem;
+  display: none;
+}
+.hidden-active {
+  display: block;
+}
+@media (max-width: 805px) {
+  .dura {
+    margin-left: 5rem;
+  }
+}
+@media (max-width: 400px) {
+  .syllabus-middle-container {
+    width: 100%;
+  }
+}
+/* --------------------------------------------------------END OF COURSE SYLLABUS PAGE STYLES------------------------------------------------------------------------ */
+/* --------------------------------------------------------START OF CERTIFICATE PAGE STYLES-------------------------------------------------------------------------- */
+
+.certificate-top-part {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+#certficate {
+  margin-top: 2rem;
+  margin-left: 5%;
+  width: 90%;
+}
+.certificate-bottom-container {
+  padding: 2rem;
+  width: 90vw;
+  margin: 0 auto;
+  height: 50vh;
+}
+.learn-advantage-content-left {
+  margin-top: 2rem;
+  list-style-position: inside;
+  list-style-image: url("./images/Circle-Shape2.jpg");
+}
+.single-learning-one {
+  margin: 0.2rem;
+  padding: 1rem;
+  display: inline-flex;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+
+.learning-advantage-content-right-top {
+  min-width: 7rem;
+  height: 3rem;
+  background-color: #f1bebe;
+  cursor: pointer;
+}
+.learning-support-right-container {
+  display: flex;
+}
+.learning-advantage-content-right {
+  display: none;
+  padding: 2rem;
+  margin-top: 0.5rem;
+}
+.actigo {
+  display: block;
+}
+@media (max-width: 550px) {
+  #certficate {
+    width: 80vw;
+    margin: 0 auto;
+  }
+}
+/* --------------------------------------------------------END OF CERTIFICATE PAGE STYLES------------------------------------------------------------------------- */
+/* ---------------------------------------------------------START OF CARRER SUPPORT PAGE STYLES----------------------------------------------------------------------- */
+.career-support {
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.career-top {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+.for-round {
+  margin: 0 auto;
+  width: 5rem;
+  height: 5rem;
+  background-color: #d8dee8;
+  border-radius: 50%;
+}
+.things {
+  margin: 0 auto;
+  width: 22rem;
+  height: 10rem;
+  border: 1px solid rgba(0, 0, 0, 0.171);
+  border-top: none;
+  text-align: center;
+}
+.career-bottom {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* ---------------------------------------------------------END OF CARRER SUPPORT PAGE STYLES------------------------------------------------------------------------- */
+/* ---------------------------------------------------------START OF FACULTY PAGE STYLES------------------------------------------------------------------------------ */
+.faculty-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.faculty-top-part {
+  padding: 1rem;
+  width: 100%;
+  height: 10%;
+}
+.faculty-middle-part {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 40%;
+}
+.faculty-head {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background-color: #d8dee8;
+}
+.faculty-body {
+  margin-left: 1rem;
+}
+.faculties {
+  padding: 1rem;
+  display: flex;
+  min-width: 40%;
+  height: 25%;
+  margin: 2rem;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.171);
+  border-top: none;
+}
+.faculti-bottom-part {
+  margin-left: 1.5rem;
+}
+.faculty-h {
+  margin-left: 1rem;
+}
+#fee-image {
+  width: 90%;
+  margin-left: 1rem;
+}
+/* ---------------------------------------------------------END OF FAFACULTY PAGE STYLES------------------------------------------------------------------------------ */
+/* ---------------------------------------------------------ELIGIBILITY PAGESTYLE------------------------------------------------------------------------------------- */
+.eligibility-and-application-process-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.eligibility-top-part {
+  margin-left: 4rem;
+}
+li {
+  padding: 0.8rem;
+  margin-left: 1rem;
+  display: flex;
+  flex-flow: row;
+  min-height: 100px;
+  position: relative;
+}
+span.number {
+  margin-right: 100px;
+  text-align: center;
+  width: 1.5rem;
+  height: 1rem;
+  background-color: orange;
+  border-radius: 50%;
+  z-index: 1;
+}
+span.line {
+  position: absolute;
+  height: 100%;
+  border: solid orange 0.1em;
+  top: 1.5rem;
+  left: 1.2rem;
+}
+li:last-child span.line {
+  display: none;
+}
+.blob {
+  padding: 1rem;
+  padding-top: 0;
+  border: 1px solid black;
+  border-top: none;
+}
+.eligibility-list-container ul li::before {
+  content: url("./Images/list\ before\ image.png");
+  position: absolute;
+  left: 7.2rem;
+  top: 1.5rem;
+}
+@media (max-width: 830px) {
+  .eligibility-list-container ul li::before {
+    content: url("./Images/Circle-Shape2.jpg");
+    position: absolute;
+    left: 6.5rem;
+    top: 2rem;
+  }
+  span.number {
+    width: 3.5rem;
+  }
+}
+@media (max-width: 500px) {
+  span.number {
+    width: 8rem;
+  }
+}
+/* ---------------------------------------------------------END OF ELIGIBILITY PAGE STYLES----------------------------------------------------------------------------- */
+/* ---------------------------------------------------------STUDENT TESTIMONIAL PAGE STYLES--------------------------------------------------------------------------- */
+.student-testimonial-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.student-top-part {
+  padding: 1rem;
+  width: 100%;
+  height: 10%;
+}
+.student-head {
+  margin: 0 auto;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #d8dee8;
+}
+.working-place-icon {
+  width: 25%;
+}
+.one-student {
+  margin-left: 5rem;
+  border-bottom: 3px solid orangered;
+  width: 20%;
+  height: 40%;
+}
+.students-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.student-ending {
+  margin-top: 1.5rem;
+}
+.student-question {
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+.single-student-question {
+  margin-top: 0.5rem;
+  position: relative;
+}
+.plus-symbol {
+  position: absolute;
+  cursor: pointer;
+  padding: 2px;
+  background-color: coral;
+  font-size: 2rem;
+  top: 0.3rem;
+  left: -0.7rem;
+}
+@media (max-width: 708px) {
+  #working-place-icon {
+    width: 20vw !important;
+  }
+}
+/* ----------------------------------------------------------------------END OF TESTIMONIAL PAGE STYLES---------------------------------------------------------------- */
+/* ----------------------------------------------------------------------FOOTER STYLES--------------------------------------------------------------------------------- */
+.final-footer-container {
+  width: 100%;
+  padding: 2rem;
+  background-color: black;
+}
+#immain {
+  margin-left: 9%;
+}
+.all-column-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer-hs {
+  color: white;
+  margin: 1rem 0;
+}
+.first-left-one {
+  line-height: 2rem;
+}
+.first-left-one p a {
+  color: white;
+}
+.footer-line {
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 85vw;
+}
+.botton-footer {
+  color: white;
+  margin-left: 10%;
+  margin-top: 1rem;
+}
+.movie h2 {
+  color: white;
+}
+/* -------------------------------------------------------------------------END OF FOOTER STYLES----------------------------------------------------------------------- */
